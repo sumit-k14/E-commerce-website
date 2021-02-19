@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel = "icon" href ="images/cart.png" type = "image/x-icon" >
+    <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DreamStore</title>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+          <img src="images/DreamStore.png" width="180px">
+        </div>
+      
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div> 
+
+<!---------------------------------------------contact page---------------------------------------------------->
+<section>
+<div class="container">
+  <div class="contact-info">
+   <div>
+     <h2>Contact Info</h2>
+     <ul class="info">
+      <li><span><img src="images/location.png"></span>
+          <span>2912 Meadow Brook Road<br>Los Angeles, CA<br>90017</span>
+      </li>
+      <li><span><img src="images/mail.png"></span>
+        <span><a href="mailto:dreamstoreinfo@gmail.com?"></a>dreamstoreinfo@gmail.com</span>
+    </li>
+    <li><span><img src="images/calling.png"></span>
+      <span>324-428-1657</span>
+    </li>
+  </ul>
+</div>
+
+<div class="social-media">
+  <ul>
+    <li><a href="https://www.facebook.com/profile.php?id=100012585962302"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/sumit.k14"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://twitter.com/sumit_k14?s=09"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="mailto:dreamstoreinfo@gmail.com?"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/sumit-kumar-676838149"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+</div>
+  </div>
+  
+  <div class="contact-form">
+    <h2>Send a Message</h2>
+    <div class="form-box">
+      <div class="input-box w50">
+        <input type="text" name="" placeholder="First Name" required>
+      </div>
+      <div class="input-box w50">
+        <input type="text" name="" placeholder="Last Name" required>
+      </div>
+      <div class="input-box w50">
+        <input type="email" placeholder="Email" name="" required>
+      </div>
+      <div class="input-box w50">
+        <input type="text" name="" placeholder="Mobile No." required>
+      </div>
+      <div class="w100">
+        <h4>Write your message here...</h4>
+        <textarea name="" style="height:90px; width:450px"></textarea>
+      </div>
+        <a href="" type="submit" class="w100 send_btn">Send message</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!----------------------------------------------------footer--------------------------------------------------->
+
+<div class="footer">
+ <div class="container">
+  <div class="row">
+     <div class="footer-col-1">
+       <h3>Download Our App</h3>
+       <p>Download App for Android and ios mobile phones.</p>
+       <div class="app-logo">
+        <a href="#"><img src="images/play-store.png"></a> 
+        <a href="#"><img src="images/app-store.png"></a> 
+       </div>
+     </div>
+     <div class="footer-col-2">
+      <img src="images/DreamStore white.png">
+      <p>Our Purpose Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many.</p>
+     </div>
+     <div class="footer-col-3">
+      <h3>Useful Links</h3>
+      <ul>
+        <li>Coupons</li>
+        <li>Blog Posts</li>
+        <li>Return Policy</li>
+        <li>Join Affiliate</li>
+      </ul>
+    </div>
+    
+    <div class="footer-col-4">
+      <h3>Follow us</h3>
+      <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>YouTube</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">Copyright 2021 by DreamStore - follow your passion.</p>
+ </div>
+</div>
+
+<!-----------------------------------------------JavaScript Part---------------------------------------------->
+
+<script>
+ 
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if(MenuItems.style.maxHeight == "0px"){
+      MenuItems.style.maxHeight = "200px";
+    }
+
+    else{
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+
+</script>
+
+</body>
+</html>
